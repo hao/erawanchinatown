@@ -1,0 +1,160 @@
+p, ul {
+  line-height: 150%;
+}
+
+footer {
+  background: -webkit-gradient(linear, 0% 0, 0% 20%, from(rgba(0, 0, 0, 0.1)), to(transparent)), #c60;
+  clear: both;
+  color: white;
+  float: left;
+  margin-top: 80px;
+  padding: 80px 0px 350px;
+  text-shadow: rgba(0, 0, 0, 0.7) 0px -1px;
+  width: 100%;
+}
+
+footer hgroup h2 {
+  color: #c30;
+  display: inline-block;
+  font-family: 'Tangerine', Georgia, 'Times New Roman', serif;
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0px 15px 12px 0px;
+}
+
+footer p {
+  font-family: 'Arimo', Georgia, 'Times New Roman', serif;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+footer dt {
+  color: rgba(255, 255, 255, 0.8);
+  display: block;
+  font-family: 'Arimo', Georgia, 'Times New Roman', serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+footer dd {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.relative {
+  position: relative;
+}
+
+#copyright {
+  clear: both;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 100px;
+}
+
+#guilloche {
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  z-index: 0;
+}
+
+#main-bg {
+  background: -webkit-gradient(linear, 0% 0, 0% 100%, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0))), #c60;
+  clear: both;
+  color: white;
+  cursor: default !important;
+  display: block;
+  height: 371px;
+  position: fixed;
+  text-shadow: rgba(0, 0, 0, 0.3) 0px -1px;
+  top: 82px;
+  width: 100%;
+}
+
+#main-bg h1 {
+  font-family: 'Tangerine', Georgia, 'Times New Roman', serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.1em;
+  margin: 40px 0px 20px;
+  text-align: left;
+  text-shadow: rgba(0, 0, 0, 0.6) 0px -1px;
+}
+
+#main-bg p, #main-bg ul {
+  font-family: 'Arimo', Georgia, 'Times New Roman', serif;
+  font-size: 16px;
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+#main-nav {
+  background-color: white;
+  border-bottom: 1px solid white;
+  border-top: 4px solid #ECECEC;
+  display: block;
+  float: left;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 2000;
+}
+
+#main-nav #erawan-logo {
+  background: url(../images/erawan.png) no-repeat;
+  display: inline-block;
+  height: 78px;
+  margin-left: -10px;
+  margin-top: -5px;
+  padding: 0;
+  position: absolute;
+  text-indent: -1000px;
+  top: 5px;
+  width: 208px;
+}
+
+#main-nav #erawan-logo:hover {
+  background-color: transparent;
+  border-top: none;
+  margin-top: -5px;
+}
+
+#main-nav a:hover {
+  color: #B53303;
+  font-weight: 500;
+}
+
+#main-nav>div {
+  position: relative;
+}
+
+#main-nav ul {
+  float: right;
+}
+
+#main-nav li {
+  float: left;
+}
+
+#main-nav li a {
+  -webkit-transition: background-color 0.1s ease-in-out;
+  display: block;
+  font-family: 'Arimo', Georgia, 'Times New Roman', serif;
+  line-height: 78px;
+  padding: 0px 15px;
+  text-decoration: none;
+  text-shadow: white 0px 1px;
+  white-space: nowrap;
+}
+
+#main-wrapper {
+  background-color: white;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 12px;
+  clear: both;
+  padding-top: 50px;
+  position: absolute;
+  top: 432px;
+  width: 100%;
+  z-index: 10;
+}

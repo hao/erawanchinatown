@@ -35,6 +35,11 @@
   
   <!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
   <meta http-equiv="cleartype" content="on">
+
+  <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
   
   <!-- Uncomment if you are specifically targeting less enabled mobile browsers
   <link rel="stylesheet" media="handheld" href="css/handheld.css?v=1">  -->
@@ -44,25 +49,75 @@
  
   <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
   <script src="js/libs/modernizr-1.7.min.js"></script>
+
+  <link rel="stylesheet" media="screen and (min-width: 481px)" href="css/base.css">
+  <!--[if lt IE 9]>
+  <link rel="stylesheet" media="screen" href="css/base.css">
+  <![endif]-->
+  <link rel="stylesheet" media="screen" href="css/app.css">
 </head>
 
-<body>
+<body class="home">
 
-  <div id="container">
-    <header>
-
-    </header>
-    
-    <div id="main">
-	
-		
-	
+  <nav id="main-nav">
+    <div class="container_10" id="nav-wrapper">
+      <a href="/" id="erawan-logo" class="">Erawan</a>
+      <ul>
+        <span class="main">
+          <li id="menu-nav-btn"><a href="#menu" class="">Menu</a></li>
+          <li id="hours-nav-btn"><a href="#hours" class="">Hours</a></li>
+          <li id="location-nav-btn"><a href="#location" class="">Location</a></li>
+        </span>
+      </ul>
     </div>
-    
-    <footer>
+  </nav>
 
+  <header id="main-bg">
+    <canvas id="guilloche" width="1000" height="1000"></canvas>
+    <div class="container_10 relative">
+      <div class="grid_5 prefix_5">
+        <h1 id="headline">Ambrosial Thai cuisine.</h1>
+        <ul>
+          <li>No corkage fee for BYOB.</li>
+          <li>Gift cards.</li>
+          <li>Delivery.</li>
+          <li>Take out.</li>
+          <li>Catering.</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div id="main-wrapper">
+    <div id="container" class="container_10">
+
+      <section id="vision" class="grid_10">
+	<hgroup>
+	  <h2>Menu</h2>
+	</hgroup>
+        <p>Menu goes here.</p>
+      </section>
+
+    </div> <!--! end of #container -->
+    <footer id="footer">
+      <div class="container_10">
+        <hgroup>
+          <h2>Location</h2>
+          <!-- <h3>We&rsquo;re open.</h3> -->
+        </hgroup>
+        <div id="footer-nav" class="grid_5 alpha">
+          <p>925 Arch Street</p>
+          <p>Philadelphia, PA</p>
+          <p><!-- <span class="icon"></span> --><a href="mailto:erawan@erawanchinatown.com">erawan@erawanchinatown.com</a></p>
+          <p><!-- <span class="icon"></span> -->215-922-7135</p>
+        </div>
+        <div class="grid_5 omega clearfix">
+          <iframe width="300" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=925+Arch+Street+Philadelphia,+PA&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=42.85226,93.076172&amp;ie=UTF8&amp;hq=&amp;hnear=925+Arch+St,+Philadelphia,+Pennsylvania+19107&amp;ll=39.95357,-75.15584&amp;spn=0.019738,0.025749&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=925+Arch+Street+Philadelphia,+PA&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=42.85226,93.076172&amp;ie=UTF8&amp;hq=&amp;hnear=925+Arch+St,+Philadelphia,+Pennsylvania+19107&amp;ll=39.95357,-75.15584&amp;spn=0.019738,0.025749&amp;z=14&amp;iwloc=A" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+        </div>
+        <div id="copyright" class="grid_10">Copyright &copy;2011 Erawan Chinatown. Built by <a href="http://iteaha.us/">iteahaus</a>.</div>
+      </div>
     </footer>
-  </div> <!--! end of #container -->
+  </div>
   
   <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
@@ -86,5 +141,26 @@
   </script>
   -->
   <!-- <noscript>Your browser does not support JavaScript!</noscript> -->
+  <script src="js/libs/guilloche.js"></script>
+  <script>
+    var guillocheCanvas = $('#guilloche').get(0);
+    guillocheCanvas.width = ( typeof window.innerWidth != 'undefined' )
+      ? window.innerWidth
+      : (    typeof document.documentElement != 'undefined'
+          && typeof document.documentElement.clientWidth != 'undefined'
+          && document.documentElement.clientWidth != 0 )
+        ? document.documentElement.clientWidth
+        : guillocheCanvas.offsetWidth = document.getElementsByTagName('body')[0].clientWidth;
+    guilloche( guillocheCanvas, {
+      majorR: 479,
+      minorR: 100,
+      angleMultiplier: 50,
+      radiusEffectConstant: 250,
+      steps: 1210,
+      centerPoint: { x: 400, y: 125 },
+      color: 'rgb(187,136,16)',
+      globalAlpha: 1.0
+    }
+  )</script>
 </body>
 </html>

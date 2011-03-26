@@ -190,10 +190,12 @@ section.menu .category {
   margin-left: -305px;
 }
 
+/* price */
 .menu hgroup dl>dd:first-of-type,.menu hgroup dl>dd:last-of-type,.menu dl>dd:nth-of-type(2) {
   clear: right;
   float: right;
   letter-spacing: 0.1em;
+  text-align: right;
   width: 75px;
 }
 

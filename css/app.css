@@ -3,12 +3,18 @@ p, ul {
 }
 
 footer {
-  background: -webkit-gradient(linear, 0% 0, 0% 20%, from(rgba(0, 0, 0, 0.1)), to(transparent)), #c60;
+  background: #c60;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#c60), to(#f93));
+  background-image: -moz-linear-gradient(top, #c60, #f93);
+  <!--[if IE]>
+  background: transparent;
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#cc6600',endColorstr='#ff9933');
+  <![endif]-->
   clear: both;
   color: white;
   float: left;
   margin-top: 80px;
-  padding: 80px 0px 350px;
+  padding: 80px 0px 400px;
   text-shadow: rgba(0, 0, 0, 0.7) 0px -1px;
   width: 100%;
 }
@@ -24,22 +30,8 @@ footer hgroup h2 {
 
 footer p {
   font-family: 'Arimo', Georgia, 'Times New Roman', serif;
-  font-size: 16px;
-  line-height: 150%;
-}
-
-footer dt {
-  color: rgba(255, 255, 255, 0.8);
-  display: block;
-  font-family: 'Arimo', Georgia, 'Times New Roman', serif;
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
-footer dd {
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 150%;
 }
 
 .relative {
@@ -60,6 +52,7 @@ footer dd {
 }
 
 #main-bg {
+  background-color: #c60;
   background: -webkit-gradient(linear, 0% 0, 0% 100%, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0))), #c60;
   clear: both;
   color: white;
@@ -157,4 +150,60 @@ footer dd {
   top: 432px;
   width: 100%;
   z-index: 10;
+}
+
+section.menu {
+  clear: both;
+}
+
+.menu dl {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 380px;
+}
+
+.menu dt, .menu dl>dd:last-of-type {
+  clear: both;
+  float: left;
+  margin-left: 40px;
+  width: 265px;
+}
+
+.menu dl>dd:first-of-type {
+  float: left;
+  margin-left: -305px;
+}
+
+.menu dl>dd:nth-of-type(2) {
+  float: right;
+  letter-spacing: 0.1em;
+}
+
+.menu dl>dd:last-of-type {
+  padding-bottom: 0.5em;
+}
+
+
+.menu dt {
+  font-weight: bold;
+}
+
+.menu dl>dd:last-of-type {
+  font-size: smaller;
+  font-style: italic;
+}
+
+
+.map {
+  color: #ffffff;
+}
+
+
+footer a, footer a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #cc0000;
 }

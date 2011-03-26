@@ -156,8 +156,24 @@ section.menu {
   clear: both;
 }
 
+section.menu .category {
+  font-size: larger;
+  text-align: center;
+  width: 380px;
+}
+
+
+.menu hgroup dt {
+  font-size: smaller;
+  font-style: italic;
+  float: left;
+  margin-left: 0;
+  width: 305px;
+}
+
+
 .menu dl {
-  margin-left: 10px;
+  margin-left: 0;
   margin-right: 10px;
   width: 380px;
 }
@@ -174,9 +190,11 @@ section.menu {
   margin-left: -305px;
 }
 
-.menu dl>dd:nth-of-type(2) {
+.menu hgroup dl>dd:first-of-type,.menu hgroup dl>dd:last-of-type,.menu dl>dd:nth-of-type(2) {
+  clear: right;
   float: right;
   letter-spacing: 0.1em;
+  width: 75px;
 }
 
 .menu dl>dd:last-of-type {
@@ -188,7 +206,13 @@ section.menu {
   font-weight: bold;
 }
 
-.menu dl>dd:last-of-type {
+/* price */
+.menu hgroup dl>dd:first-of-type,.menu hgroup dl>dd:last-of-type,.menu dl>dd:nth-of-type(2) {
+  font-size: inherit;
+  font-style: normal;
+}
+
+.menu dl>dd:last-of-type, .menu .extra {
   font-size: smaller;
   font-style: italic;
 }

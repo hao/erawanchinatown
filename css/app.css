@@ -173,9 +173,10 @@ footer p {
   z-index: 10;
 }
 
-section.menu {
+/* section.menu */
+section.category, div.locations {
   clear: both;
-  padding-top: 120px;
+  padding-top: 130px;
 }
 
 section.menu .category {
@@ -225,6 +226,14 @@ section.menu .category {
   padding-bottom: 0.5em;
 }
 
+.map {
+  padding-bottom: 50px;
+}
+
+footer p {
+  margin-bottom: 1em;
+}
+
 
 .menu dt {
   font-weight: bold;
@@ -254,4 +263,8 @@ footer a, footer a:visited {
 
 footer a:hover {
   color: #cc0000;
+}
+
+.adr>span:first-of-type, .hours p>span:first-of-type {
+  font-weight: bold;
 }

@@ -1,3 +1,5 @@
+/* made by iteahaus */
+
 p, ul {
   line-height: 150%;
 }
@@ -70,7 +72,7 @@ footer p {
   font-size: 40px;
   font-weight: 500;
   line-height: 1.1em;
-  margin: 40px 0px 20px;
+  margin: 60px 0px 20px;
   text-align: left;
   text-shadow: rgba(0, 0, 0, 0.6) 0px -1px;
 }
@@ -85,7 +87,7 @@ footer p {
 #main-nav {
   background-color: white;
   border-bottom: 1px solid white;
-  border-top: 4px solid #ECECEC;
+  border-top: 5px solid #ECECEC;
   display: block;
   float: left;
   position: fixed;
@@ -124,21 +126,40 @@ footer p {
 
 #main-nav ul {
   float: right;
+  height: 90px;
+  margin-top: 25px;
+  width: 410px;
+}
+
+#main-nav ul span {
+  float: right;
 }
 
 #main-nav li {
+  clear: right;
   float: left;
+  line-height: 58px;
+  margin-top: -25px;
 }
 
 #main-nav li a {
   -webkit-transition: background-color 0.1s ease-in-out;
   display: block;
   font-family: 'Arimo', Georgia, 'Times New Roman', serif;
-  line-height: 115px;
-  padding: 0px 15px;
+  font-size: medium;
+  padding-left: 10px;
+  padding-right: 10px;
   text-decoration: none;
   text-shadow: white 0px 1px;
   white-space: nowrap;
+}
+
+#main-nav li a {
+  color: #900;
+}
+
+#main-nav li a:hover {
+  color: #c00;
 }
 
 #main-wrapper {
@@ -154,6 +175,7 @@ footer p {
 
 section.menu {
   clear: both;
+  padding-top: 120px;
 }
 
 section.menu .category {

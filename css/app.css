@@ -72,19 +72,20 @@ footer p {
   height: 371px;
   position: fixed;
   text-shadow: rgba(0, 0, 0, 0.3) 0px -1px;
-  top: 82px;
+  top: 120px;
   width: 100%;
 }
 
 #main-bg h1 {
   line-height: 1.1em;
-  margin: 60px 0px 20px;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
   text-align: left;
 }
 
 #main-bg p, #main-bg ul {
   list-style: none;
-  margin-bottom: 15px;
+  padding-bottom: 15px;
 }
 
 #main-nav {

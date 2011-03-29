@@ -58,8 +58,13 @@ footer p {
 }
 
 #main-bg {
-  background-color: #c60;
-  background: -webkit-gradient(linear, 0% 0, 0% 100%, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0))), #c60;
+  background: #c60;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#a40), to(#d71));
+  background-image: -moz-linear-gradient(top, #a40, #d71);
+  <!--[if IE]>
+  background: transparent;
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#aa4400',endColorstr='#dd7711');
+  <![endif]-->
   clear: both;
   color: white;
   cursor: default !important;

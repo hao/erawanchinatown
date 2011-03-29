@@ -21,18 +21,23 @@ footer {
   width: 100%;
 }
 
+.menu hgroup h2, footer hgroup h2 {
+  margin-top: 0.5em;
+}
+
+section.category, .menu hgroup h2, footer hgroup h2 {
+  margin-bottom: 0.5em;
+}
+
 footer hgroup h2 {
-  color: #c30;
+  padding-left: 10px;
+}
+
+footer hgroup h2 {
   display: inline-block;
-  font-family: 'Tangerine', Georgia, 'Times New Roman', serif;
-  font-size: 28px;
-  font-weight: 500;
-  margin: 0px 15px 12px 0px;
 }
 
 footer p {
-  font-family: 'Arimo', Georgia, 'Times New Roman', serif;
-  font-size: 14px;
   line-height: 150%;
 }
 
@@ -42,7 +47,6 @@ footer p {
 
 #copyright {
   clear: both;
-  color: rgba(255, 255, 255, 0.8);
   margin-top: 100px;
 }
 
@@ -68,18 +72,12 @@ footer p {
 }
 
 #main-bg h1 {
-  font-family: 'Tangerine', Georgia, 'Times New Roman', serif;
-  font-size: 40px;
-  font-weight: 500;
   line-height: 1.1em;
   margin: 60px 0px 20px;
   text-align: left;
-  text-shadow: rgba(0, 0, 0, 0.6) 0px -1px;
 }
 
 #main-bg p, #main-bg ul {
-  font-family: 'Arimo', Georgia, 'Times New Roman', serif;
-  font-size: 16px;
   list-style: none;
   margin-bottom: 15px;
 }
@@ -126,9 +124,10 @@ footer p {
 
 #main-nav ul {
   float: right;
-  height: 90px;
-  margin-top: 25px;
-  width: 410px;
+  height: 59px;
+  width: 550px;
+  padding-top: 28px;
+  padding-bottom: 28px;
 }
 
 #main-nav ul span {
@@ -137,22 +136,23 @@ footer p {
 
 #main-nav li {
   clear: right;
+  display: block;
   float: left;
-  line-height: 58px;
-  margin-top: -25px;
+  line-height: 70px;
+  margin-top: -28px;
 }
 
 #main-nav li a {
   -webkit-transition: background-color 0.1s ease-in-out;
   display: block;
-  font-family: 'Arimo', Georgia, 'Times New Roman', serif;
-  font-size: medium;
-  padding-left: 10px;
-  padding-right: 10px;
-  text-decoration: none;
-  text-shadow: white 0px 1px;
-  white-space: nowrap;
+  padding-left: 15px;
+  padding-right: 15px;
 }
+
+#main-nav span a:hover {
+  text-decoration: underline;
+}
+
 
 #main-nav li a {
   color: #900;
@@ -235,26 +235,63 @@ footer p {
 }
 
 
-.menu dt {
-  font-weight: bold;
+#main-nav li a {
+  font-family: 'Quattrocento', Georgia, 'Times New Roman', serif;
+  font-size: 16px;
+  text-decoration: none;
+  text-shadow: white 0px 1px;
+  white-space: nowrap;
 }
 
-/* price */
-.menu hgroup dl>dd:first-of-type,.menu hgroup dl>dd:last-of-type,.menu dl>dd:nth-of-type(2) {
+#main-bg h1 {
+  font-family: 'Quattrocento', Georgia, 'Times New Roman', serif;
+  font-size: 40px;
+  font-weight: 500;
+  text-shadow: rgba(0, 0, 0, 0.6) 0px -1px;
+}
+
+#main-bg p, #main-bg ul {
+  font-family: 'Quattrocento', Georgia, 'Times New Roman', serif;
+  font-size: 16px;
+}
+
+.category hgroup h2.category, .menu hgroup h2, footer hgroup h2 {
+  font-family: 'Quattrocento', Georgia, 'Times New Roman', serif;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.menu dt {
+  font-family: 'Quattrocento', Georgia, 'Times New Roman', serif;
+}
+
+/* sku and price */
+.menu dl>dd:first-of-type, .menu hgroup dl>dd:first-of-type,.menu hgroup dl>dd:last-of-type,.menu dl>dd:nth-of-type(2) {
+  font-family: 'Oswald', Helvetica, arial, serif;
   font-size: inherit;
   font-style: normal;
 }
 
 .menu dl>dd:last-of-type, .menu .extra {
+  font-family: 'Oswald', Helvetica, arial, serif;
   font-size: smaller;
   font-style: italic;
 }
 
-
 .map {
-  color: #ffffff;
+  color: #fff;
+  font-family: 'Quattrocento', Georgia, 'Times New Roman', serif;
+  font-size: 12px;
 }
 
+footer hgroup h2 {
+  color: #fff;
+}
+
+footer p {
+  font-family: 'Quattrocento', Georgia, 'Times New Roman', serif;
+  font-size: 14px;
+}
 
 footer a, footer a:visited {
   color: #ffffff;
@@ -267,4 +304,10 @@ footer a:hover {
 
 .adr>span:first-of-type, .hours p>span:first-of-type {
   font-weight: bold;
+}
+
+#copyright {
+  color: #fff;
+  font-family: 'Quattrocento', Georgia, 'Times New Roman', serif;
+  font-size: 12px;
 }

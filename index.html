@@ -889,25 +889,30 @@
   -->
   <!-- <noscript>Your browser does not support JavaScript!</noscript> -->
   <script src="js/libs/guilloche.js"></script>
+  <script src="js/libs/jquery.smooth-scroll.min.js"></script>
   <script>
-    var guillocheCanvas = $('#guilloche').get(0);
-    guillocheCanvas.width = ( typeof window.innerWidth != 'undefined' )
-      ? window.innerWidth
-      : (    typeof document.documentElement != 'undefined'
-          && typeof document.documentElement.clientWidth != 'undefined'
-          && document.documentElement.clientWidth != 0 )
-        ? document.documentElement.clientWidth
-        : guillocheCanvas.offsetWidth = document.getElementsByTagName('body')[0].clientWidth;
-    guilloche( guillocheCanvas, {
-      majorR: 479,
-      minorR: 100,
-      angleMultiplier: 50,
-      radiusEffectConstant: 250,
-      steps: 1210,
-      centerPoint: { x: 400, y: 125 },
-      color: 'rgb(187,136,16)',
-      globalAlpha: 1.0
-    }
-  )</script>
+    $(document).ready(function() {
+      $('nav li a').smoothScroll();
+
+      var guillocheCanvas = $('#guilloche').get(0);
+      guillocheCanvas.width = ( typeof window.innerWidth != 'undefined' )
+        ? window.innerWidth
+        : (    typeof document.documentElement != 'undefined'
+            && typeof document.documentElement.clientWidth != 'undefined'
+            && document.documentElement.clientWidth != 0 )
+          ? document.documentElement.clientWidth
+          : guillocheCanvas.offsetWidth = document.getElementsByTagName('body')[0].clientWidth;
+      guilloche( guillocheCanvas, {
+        majorR: 479,
+        minorR: 100,
+        angleMultiplier: 50,
+        radiusEffectConstant: 250,
+        steps: 1210,
+        centerPoint: { x: 400, y: 125 },
+        color: 'rgb(187,136,16)',
+        globalAlpha: 1.0
+      } );
+    })
+  </script>
 </body>
 </html>
